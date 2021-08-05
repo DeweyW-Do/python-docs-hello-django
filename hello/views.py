@@ -46,5 +46,6 @@ def index(request):
     values['now_time'] = result['now_time']
     values['fine_dust'] = result['fine_dust']
     values['fine_particulate_matter'] = result['fine_particulate_matter']
+    values['check_need'] = result['check_need']
  
     return render(request, "tables/table1.html", context = values)
