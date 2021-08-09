@@ -47,5 +47,10 @@ def index(request):
     values['fine_dust'] = result['fine_dust']
     values['fine_particulate_matter'] = result['fine_particulate_matter']
     values['check_need'] = result['check_need']
+    values['in_Max_TF'] = result['in_Max_TF']
+    values['in_Min_TF'] = result['in_Min_TF']
+    values['in_Max_Temperature'] = result['in_Max_Temperature']
+    values['in_Min_Temperature'] = result['in_Min_Temperature']
+    values['in_Mean_Temperature'] = result['in_Mean_Temperature']
  
     return render(request, "tables/table1.html", context = values)
